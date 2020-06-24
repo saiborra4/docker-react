@@ -1,5 +1,8 @@
 sudo: required
+<<<<<<< HEAD
 language: generic
+=======
+>>>>>>> 1c57887bbfc2cf2a32a4311627439f9ae53b5558
 services:
  - docker
 before_install:
