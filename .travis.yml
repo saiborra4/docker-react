@@ -1,11 +1,11 @@
-sudo: required
-<<<<<<< HEAD
 language: generic
-=======
->>>>>>> 1c57887bbfc2cf2a32a4311627439f9ae53b5558
+sudo: required
+
 services:
- - docker
-before_install:
- - docker build -t sai/docker-react -f Dockerfile.dev .
-script:
- - docker run -e CI=true sai/docker-react npm run test
+  - docker
+
+  before_install:
+    - docker build -t sai/docker-react -f Dockerfile.dev .
+
+    script:
+      - docker run -e CI=true sai/docker-react npm run test
